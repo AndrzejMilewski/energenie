@@ -1,3 +1,5 @@
+#nie wiem jak usunac ponizsza linie, bez tego nie dziala
+#to dziala w Windows 2003
 $ShouldEnable = 1 -eq 1
 
     $netAssembly = [Reflection.Assembly]::GetAssembly([System.Net.Configuration.SettingsSection])
@@ -21,10 +23,7 @@ $ShouldEnable = 1 -eq 1
         }
     }
 
-            
-        
 
-#Set-UseUnsafeHeaderParsing -Enable
 $web = New-Object System.Net.WebClient
 $url = "http://192.168.0.20"
 $Web.OpenRead($url)
